@@ -1,0 +1,98 @@
+/* Zerando margens e padronizando a caixa de elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #2e7d32; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Estilo do Conteúdo Principal */
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante empurrando o rodapé para baixo */
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.calendario-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.calendario-container h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 0.5rem;
+}
+
+.calendario-container p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #e8f5e9; /* Verde muito claro */
+    color: #1b5e20;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tbody tr:hover {
+    background-color: #f1f8f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
